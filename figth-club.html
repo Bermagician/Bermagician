@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Punch line</title>
+</head>
+<body>
+<div style="position: relative; display: inline-block;">
+<div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;">
+            <!--player-->
+    <div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
+    <div  style="background-color: gray; height: 30px; width: 100%;"></div>
+    <div id="playerHealt" style="position: absolute; background: green; top: 0; right: 0; bottom: 0; width: 100%;"></div>
+    </div>
+            <!--timer-->
+     <div 
+     style="background-color: whitesmoke; 
+     width: 80px; 
+     height: 80px; 
+     flex-shrink: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: solid 3px black;
+     border-radius: 100%;
+    ">
+        <h1 id="timer" style="color: #818cf8; white-space: 10px; "></h1>
+     </div>
+            <!--enemy-->
+    <div style="position: relative; height: 30px; width: 100%;">
+    <div  style="background-color: gray; height: 30px;"></div>
+    <div  id="enemyHealt" style="position: absolute; background: green; top: 0; right: 0; bottom: 0; left: 0;"></div>
+    </div>
+    <div></div>
+    </div>
+        <div id="displayText"
+        style="position: absolute;
+        color: red; 
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+  font-size: 100px;
+  font-family: monospace;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 
+      1px -1px 0 #2f5d87,
+      2px -2px 0 #2e5a83, 
+      3px -3px 0 #2d5880;
+        ">tie</div>
+        <canvas></canvas>
+    </div>
+<script src="js/classes.js"></script>
+<script src="js/utils.js"></script>
+<script  src="js/index.js"></script>
+
+
+</body>
+</html>
